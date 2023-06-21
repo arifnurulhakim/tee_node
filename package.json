@@ -1,0 +1,38 @@
+{
+  "name": "temp_node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.12.0",
+    "apollo-server-express": "^3.12.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-express": "^2.0.7",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.1",
+    "nodemailer": "^6.9.2",
+    "nodemailer-sendinblue-transport": "^2.0.1",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.31.1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arifnurulhakim/temp_node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arifnurulhakim/temp_node/issues"
+  },
+  "homepage": "https://github.com/arifnurulhakim/temp_node#readme",
+  "description": ""
+}
