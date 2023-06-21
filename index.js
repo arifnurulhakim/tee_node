@@ -65,9 +65,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Connect to the database
-const sequelize = new Sequelize('js', 'postgres', 'qweqwe', {
-  host: 'db',
+const sequelize = new Sequelize('nodetes-main-db-0d4b79c7507846567', 'nodetes-main-db-0d4b79c7507846567', 'hvhGNGrrQYHgcyrZTVdM2Td5UacpMm', {
+  host: 'user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com', // Menggunakan nama kontainer 'db' sebagai host
   dialect: 'postgres',
+  port: 5432, // Port yang digunakan oleh kontainer PostgreSQL
 });
 
 sequelize
