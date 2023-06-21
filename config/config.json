@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "qweqwe",
-    "database": "js",
+    "username": "nodejstes-main-db-030ef8fbe65d73692",
+    "password": "NXneRzcUFRpHQaDASc3WUemMpjbSgD",
+    "database": "nodejstes-main-db-030ef8fbe65d73692",
    
     "dialect": "postgres"
   },
