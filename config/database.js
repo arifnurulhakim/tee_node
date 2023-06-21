@@ -21,16 +21,17 @@
 
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
+const path = require('path');
 
 const sequelize = new Sequelize('nodejstes-main-db-030ef8fbe65d73692', 'nodejstes-main-db-030ef8fbe65d73692', 'NXneRzcUFRpHQaDASc3WUemMpjbSgD', {
-  host: 'user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com', // Menggunakan nama kontainer 'db' sebagai host
+  host: 'user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com',
   dialect: 'postgres',
-  port: 5432, // Port yang digunakan oleh kontainer PostgreSQL
-   dialectOptions: {
+  port: 5432,
+  dialectOptions: {
     ssl: {
-      ca: fs.readFileSync('/path/to/ca_certificate.crt'), // Update the path to the CA certificate
+      ca: fs.readFileSync(path.join(__dirname, 'path', 'root-certs.crt')),
     },
-  }
+  },
 });
 
 module.exports = sequelize;
